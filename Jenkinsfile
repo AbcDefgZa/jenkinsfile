@@ -10,7 +10,7 @@ pipeline {
 
     stage('build') {
       steps {
-        sh 'sh \'"/software/apache-maven-3.5.4/bin/mvn" -Dmaven.test.failure.ignore clean package\''
+        sh 'sh \'/software/apache-maven-3.5.4/bin/mvn -Dmaven.test.failure.ignore clean package\''
       }
     }
 
